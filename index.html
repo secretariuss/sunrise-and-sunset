@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Sunrise and sunset</title>
+</head>
+
+<body>
+<header class="p-5 mb-4 bg-light">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-12 col-md-9 text-center">
+                <h1 class="geeting-text">Welcome to see sunrise and sunset<br>
+                    @<br>
+                    New Brunswick</h1>
+            </div>
+            <div class="col-12 col-md-3 d-flex flex-column justify-content-between ">
+                    <!---Add inpage like--->
+                <button class="btn btn-warning mb-2"><a class="text-decoration-none" href="#about-us">About</a></button>
+                <button class="btn btn-warning mb-2"><a class="text-decoration-none" href="#contact-us">Contact Us</a></button>
+                <button class="btn btn-warning mb-2"><a class="text-decoration-none" href="#subscribe">Subscribe</a></button>
+                
+            </div>
+        </div>
+    </div>
+</header>
+<main class="container">
+    <section class="row">
+        <div class="col-12 col-md-12">
+            <section class="row justify-content-around">
+                <div class="col-12 col-md-4 mb-2" id="about-us">
+                    <h2>About Us</h2>
+                    <p>
+                        The mission of Team Eight Company (TEC) is to inspire people to contact nature.
+                        TEC is committed to serving tourists who are keen on sunrise and sunset.
+                    </p>
+                        <!---Add a picture match the topic--->
+                    <img src="./assets/image/sunrise.jpg" alt="sunrise-pic" class="img-fluid" width="410px" height="250px"/>
+                    
+                </div>
+                <div class="col-12 col-md-8">
+                    <form class="row">
+                        <div class="col">
+                            <input type="text" class="form-control search-value" placeholder="Input place's name"
+                                   aria-label="Place name" id="search-value">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary input-group search-button" type="submit" id="search-button">Search</button>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col mt-2">
+                            <div id="card-container" class="row text-light text-center">
+                                <!-- <div class="col-3 bg-primary text-white me-1 mb-3 p-2 mt-2 rounded">
+                                    <p>01/14/2022</p>
+                                    <p id="weather-icon"></p>
+                                    <p>Temp:<span id="temp"></span></p>
+                                    <p>Wind:<span id="wind"></span></p>
+                                    <p>Humidity:<span id="humidity"></span></p>
+                                </div> -->
+                                <div class="col bg-primary text-white me-2 mb-3 p-2 mt-2 rounded">
+                                    <div class="row text-center">
+                                        <p class="city"></p>
+                                        <h3>Today</h3>
+                                        <p class="current-date"></p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h4>Sunrise</h4>
+                                            <img width="100" height="100" class="sun-icon" src="https://sunrisesunset.io/wp-content/uploads/2022/03/sunrise-5.svg" alt="Graphic: sunrise symbol" aria-hidden="true">
+                                            <p class="sunrise"></p>
+                                            <p class="dawn"></p>
+                                            <p class="sunrise-text"></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <h4>Sunset</h4>
+                                            <img width="100" height="100" class="sun-icon" src="https://sunrisesunset.io/wp-content/uploads/2022/03/sunset-5.svg" alt="Graphic: sunset symbol" aria-hidden="true">
+                                            <p class="sunset"></p>
+                                            <p class="dusk"></p>
+                                            <p class="sunset-text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <hr/>
+    <section class="row bg-light" id="subscribe">
+        <!--      part 5-->
+        
+        <h2 style="color:#ffbb00">Subscribe and Get Inspired</h2>
+        <h3 style="color:#ffbb00">Sign up for more travel inspiration and useful tips!</h3>
+
+        <form class="row g-3">
+           <div class="col-md-2">
+              <label for="inputName" class="form-label" id="name">Name</label>
+              <input type="text" class="form-control" id="inputName">
+           </div>
+           <div class="col-md-4">
+              <label for="inputEmail" class="form-label" id="email">Email</label>
+              <input type="email" class="form-control" id="inputEmail"/>
+           </div>
+           <div class="col-md-5">
+              <label for="inputInterest" class="form-label" id="interest">Interest</label>
+              <input type="text" class="form-control" id="inputInterest"/>
+           </div>
+           <div class="col-12">
+              <button  class="btn submitBtn btn-warning "><a class="text-decoration-none" href="./assets/image/thank6.png">Submit</a></button>
+           </div>
+        </form>
+    </section>
+
+    <div class="row text-light pt-1">
+        <div class="d-flex justify-content-center align-items-center bg-primary col-12 hotel-link"><a
+                href="https://www.booking.com/searchresults.html?ss=New+Brunswick%2C+Canada&efdco=1&label=gen173rf-1FCAEoggI46AdIM1gDaCeIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGiAg9sb2NhbGhvc3Q6NjMzNDKoAgO4Aqfbo6QGwAIB0gIkNTA0YTE0YWUtNzRmMS00MzJkLTkwMTQtMmY0MzA0MWFiMWQw2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=index&dest_id=3135&dest_type=region&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=e6829e13e5c60232&ac_meta=GhBlNjgyOWUxM2U1YzYwMjMyIAAoATICZW46BW5ldyBiQABKAFAA&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure">Hotel
+            information</a></div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 bg-light" id="contact-us">
+        <address>
+          <br>
+          <h2>Contact us</h2>
+          <br>
+          <h4>Team Eight Company, Inc.</h4>
+          <br>
+          <p> Tel:<a href="tel:506.230.0000"></a>506.230.0000</a></p>
+          <p>Email:<a href="mailto:info@teameight.com">info@teameight.com</a></p>
+        </address>
+      </div>
+</main>
+<footer>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold text-decoration-none" href="https://example.com/">team8.com</a>
+    </div>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>-->
+<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<script src="./assets/js/script.js"></script>
+</html>
